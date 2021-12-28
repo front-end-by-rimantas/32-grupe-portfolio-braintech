@@ -1,5 +1,5 @@
 {
-  "name": "32-grupe-portfolio",
+  "name": "32-grupe-portfolio-braintech",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Rimantas, Andrius Akavickis",
+  "author": "Andrius Akavickis, Rita Cincileviciene",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
