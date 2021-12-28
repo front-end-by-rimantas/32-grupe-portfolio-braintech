@@ -7,8 +7,7 @@
     "dev": "live-server --port=3005 --host=localhost",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [CSS3, HTML5
-  ],
+  "keywords": [],
   "author": "Andrius Akavickis, Pavel Brodovskij",
   "license": "MIT",
   "devDependencies": {
