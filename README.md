@@ -3,7 +3,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Cristino portfolio
+# Braintech portfolio
 
 _32 group website project_
 
@@ -11,7 +11,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://front-end-by-rimantas.github.io/32-grupe-portfolio/
 
-Design: https://shreethemes.in/cristino/layouts/index.html
+Design: https://rstheme.com/products/html/braintech/index5.html
 
 ## Project features
 
@@ -23,4 +23,4 @@ Design: https://shreethemes.in/cristino/layouts/index.html
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Pavel: https://github.com/nsn1930
