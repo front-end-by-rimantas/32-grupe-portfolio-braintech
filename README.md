@@ -23,8 +23,6 @@ Design: https://rstheme.com/products/html/braintech/index5.html
 
 ## Authors
 
-Andrius: https://github.com/brokenfinger
-
 Pavel: https://github.com/nsn1930
 
 Rita: https://github.com/ritullia
