@@ -17,3 +17,7 @@ body {
 :root {
     --primary-color: #36f;
 }
+
+.center {
+    text-align: center;
+}
