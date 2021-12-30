@@ -11,6 +11,61 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header start */
+.header {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.header > .row {
+}
+
+.header .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+}
+
+.links {
+}
+
+.links > a {
+    margin: 0 15px;
+}
+
+.side-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .fa-search {
+    line-height: 30px;
+    margin-right: 30px;
+}
+
+.dots-hamburger {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    height: 30px;
+    font-size: 5px;
+}
+
+.fa-circle {
+    padding: 3px 5px;
+}
+
+.dot1 {
+    color: #fff;
+}
+
+.dot2 {
+    color: var(--light-blue);
+}
+
 /* header end */
 
 /* hero start */
