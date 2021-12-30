@@ -7,6 +7,7 @@
 
 /* components */
 @import '../components/button.css';
+@import '../components/logo-slider.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -77,6 +78,18 @@
 /* hero end */
 
 /* company logos /w hover #1 start */
+.logo-slider.no-hover {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+.logo-slider.no-hover img {
+    filter: grayscale(0%);
+}
+
+.logo-slider.no-hover .logo-link:hover {
+    height: 70px;
+}
 /* company logos /w hover #1 end */
 
 /* about us start */
@@ -101,6 +114,11 @@
 /* testimonials end */
 
 /* company logos /w hover #2 start */
+.logo-slider {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(27deg, #020275, #00005b);
+}
 /* company logos /w hover #2 end */
 
 /* footer start */
