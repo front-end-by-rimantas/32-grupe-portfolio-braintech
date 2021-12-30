@@ -26,17 +26,18 @@
     display: flex;
     justify-content: center;
     margin: 0;
+    transition: all 0.3s;
 }
 
 .logos1 > .row {
     overflow: hidden;
-    height: 60px;
+    height: 70px;
 }
 
 .logos1 img {
     object-fit: contain;
     width: 100%;
-    height: 60px;
+    height: 70px;
 }
 /* company logos /w hover #1 end */
 
@@ -65,24 +66,49 @@
 .logos2 {
     padding-top: 80px;
     padding-bottom: 80px;
-    background: linear-gradient(250deg, #020275, #00005b);
+    background: linear-gradient(27deg, #020275, #00005b);
 }
 
 .logos2 > .row {
-    display: inline-block;
     overflow: hidden;
-    height: 60px;
+    height: 70px;
 }
 
 .logos2 img {
     object-fit: contain;
     width: 100%;
-    height: 60px;
+    height: 70px;
 }
 
 .logos2 .logo-link {
+    height: 70px;
     display: flex;
     justify-content: center;
+    transition: all 0.3s;
+}
+
+.logos2 .logo-link:hover {
+    height: 140px;
+}
+
+.logos2 div {
+    position: relative;
+}
+
+.logos2 .color-logo {
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: all 0.8s;
+}
+.logos2 .color-logo:hover {
+    filter: grayscale(0%);
+}
+
+.logos2 .grey-logo {
+    filter: grayscale(100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 /* company logos /w hover #2 end */
