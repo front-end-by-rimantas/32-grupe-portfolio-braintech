@@ -53,6 +53,37 @@
 /* lets talk end */
 
 /* blogs start */
+.blog .row {
+    height: 500px;
+    overflow: hidden;
+}
+
+.blog .blog-description {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog .blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.blog .row .blog-unit {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    min-width: 300px;
+    box-shadow: 0 0 20px #eeeeee82;
+    transition-property: margin-top;
+    transition-duration: 0.5s;
+}
+
+.blog .blog-unit:hover {
+    margin-top: 5px;
+}
+
 /* blogs end */
 
 /* testimonials start */
