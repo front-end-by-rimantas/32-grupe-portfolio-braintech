@@ -14,6 +14,11 @@
 /* header end */
 
 /* hero start */
+
+.background-col {
+    background: #0d69da;
+    background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
+}
 /* hero end */
 
 /* company logos /w hover #1 start */
