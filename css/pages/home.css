@@ -1,13 +1,13 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 
 /* components */
-@import '../components/button.css';
-@import '../components/logo-slider.css';
+@import "../components/button.css";
+@import "../components/logo-slider.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -17,23 +17,23 @@
 /* hero start */
 
 .background-col {
-    background: #0d69da;
-    background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
+  background: #0d69da;
+  background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
 }
 /* hero end */
 
 /* company logos /w hover #1 start */
 .logo-slider.no-hover {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
 }
 .logo-slider.no-hover img {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .logo-slider.no-hover .logo-link:hover {
-    height: 70px;
+  height: 70px;
 }
 /* company logos /w hover #1 end */
 
@@ -60,13 +60,16 @@
 
 /* company logos /w hover #2 start */
 .logo-slider {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background: linear-gradient(27deg, #020275, #00005b);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: linear-gradient(27deg, #020275, #00005b);
 }
 /* company logos /w hover #2 end */
 
 /* footer start */
+.icon {
+}
+
 /* footer end */
 
 /* back to top start */
