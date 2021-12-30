@@ -15,22 +15,19 @@ body {
 }
 
 :root {
-    --primary-color: #36f;
-    --secondary-color: #fd6509;
+    --primary-color: #03228f;
+    --secondary-color: #dd4c23;
+    --orange: #fd660a;
+    --cyan: #14d2f5;
+    --yellow: #f5be18;
+    --light-blue: #0a99fd;
+    --blue: #2c44e4;
+    --pink: #f30876;
+    --green: #13e1af;
 }
 
 .center {
     text-align: center;
-}
-
-.background-col {
-    background: #0d69da;
-    background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
-}
-
-.button-col {
-    background: #ee731f;
-    background: linear-gradient(270deg, #ee731f 27%, #dd4c23 72%);
 }
 
 .title {
@@ -40,7 +37,7 @@ body {
     margin-bottom: 15px;
 }
 
-.title-content {
+.content {
     display: flex;
     font-size: 18px;
     line-height: 26px;
