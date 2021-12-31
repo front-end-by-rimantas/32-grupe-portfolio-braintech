@@ -42,10 +42,21 @@
 /* about us end */
 
 /* about us /w graf start */
-.about {
-    padding-left: 40px;
+
+@media (min-width: 576px) {
+    .about {
+        padding-left: 0;
+    }
+    .title {
+        font-size: 26px;
+    }
 }
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+}
+@media (min-width: 992px) {
     .about {
         padding-left: 50px;
     }
@@ -53,17 +64,9 @@
         font-size: 27px;
     }
 }
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
     .about {
-        padding-left: 0;
-    }
-    .title {
-        font-size: 30px;
-    }
-}
-@media (max-width: 576px) {
-    .title {
-        font-size: 26px;
+        padding-left: 40px;
     }
 }
 

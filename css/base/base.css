@@ -73,17 +73,18 @@ body {
     left: -70px;
     top: 45%;
 }
-
-.round-section-photo {
-    height: 550px;
-}
 @media (max-width: 992px) {
+    .round-section-photo {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
     .round-section-photo {
         height: 434px;
     }
-    @media (max-width: 768px) {
-        .round-section-photo {
-            display: none;
-        }
+}
+@media (min-width: 1200px) {
+    .round-section-photo {
+        height: 550px;
     }
 }
