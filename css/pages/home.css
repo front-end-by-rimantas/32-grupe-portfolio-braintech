@@ -54,7 +54,7 @@
 
 /* blogs start */
 .blog .row {
-    height: 500px;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -69,12 +69,40 @@
     height: 100%;
     object-fit: contain;
 }
+.blog div:first-child {
+    position: relative;
+}
+
+.blog .blog-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    right: 1.3em;
+    bottom: 1.3em;
+    z-index: 1;
+    border-radius: 7.5em;
+    padding: 0.8em 1.2em;
+    background: linear-gradient(
+        124deg,
+        var(--primary-color),
+        var(--light-blue)
+    );
+}
+
+.blog .blog-link:hover {
+    background: linear-gradient(
+        307deg,
+        var(--primary-color),
+        var(--light-blue)
+    );
+}
 
 .blog .row .blog-unit {
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 15px;
-    min-width: 300px;
+    /* min-width: 300px; */
     box-shadow: 0 0 20px #eeeeee82;
     transition-property: margin-top;
     transition-duration: 0.5s;
