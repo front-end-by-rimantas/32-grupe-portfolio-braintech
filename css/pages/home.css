@@ -13,9 +13,11 @@
 
 /* header start */
 .header {
+    display: flex;
     position: sticky;
     top: 0;
-    padding: 30px 0;
+    z-index: 1;
+    padding: 30px 0px;
     background: transparent;
 }
 .header .col-12 {
@@ -25,7 +27,7 @@
 }
 
 .header .logo {
-    height: 30px;
+    height: 35px;
 }
 
 .header .links {
@@ -37,9 +39,22 @@
     line-height: 30px;
 }
 
+.header .navigation > a:first-child {
+    color: #ccc;
+}
+
 .header .navigation > a,
 li {
-    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+@media (max-width: 1200px) {
+    .header .navigation > a,
+    li {
+        margin-right: 35px;
+    }
 }
 
 .header .navigation > a {
@@ -114,6 +129,59 @@ li {
 /* header end */
 
 /* hero start */
+
+.hero {
+    display: flex;
+    padding-bottom: 150px;
+}
+
+.hero > .row {
+    margin-top: 50px;
+    position: relative;
+}
+
+.hero .fa-play {
+    color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.hero .hero-title {
+    font-size: 40px;
+    line-height: 55px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.hero .hero-content {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 28px;
+}
+
+.hero button {
+    margin-top: 40px;
+}
+
+.hero img {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .hero img {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+}
 
 .background-col {
     background: #0d69da;
