@@ -9,6 +9,7 @@
 @import '../components/button.css';
 @import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
+@import '../components/button.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -43,6 +44,11 @@
 
 /* about us /w graf start */
 
+.container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
 @media (min-width: 576px) {
     .about {
         padding-left: 0;
@@ -62,6 +68,10 @@
     }
     .title {
         font-size: 27px;
+    }
+    .container {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 @media (min-width: 1200px) {
