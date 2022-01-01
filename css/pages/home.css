@@ -132,7 +132,8 @@ li {
 
 .hero {
     display: flex;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 250px;
 }
 
 .hero > .row {
@@ -149,6 +150,66 @@ li {
     line-height: 70px;
     text-align: center;
     background-color: #fff;
+    position: relative;
+}
+
+.hero .fa-play > .pulse {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    position: absolute;
+    animation-name: scrolling;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        opacity: 1;
+    }
+
+    35% {
+        /* opacity: 1; */
+    }
+
+    100% {
+        height: 150px;
+        width: 150px;
+        opacity: 0;
+    }
+}
+
+.hero .fa-play > .pulse2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    position: absolute;
+    animation-name: scrollings;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes scrollings {
+    0% {
+        opacity: 1;
+    }
+
+    35% {
+        /* opacity: 1; */
+    }
+
+    100% {
+        height: 130px;
+        width: 130px;
+        opacity: 0;
+    }
 }
 
 .hero .hero-title {
@@ -179,7 +240,7 @@ li {
         display: inline-block;
         position: absolute;
         top: 50%;
-        transform: translate(0%, -50%);
+        transform: translate(-5%, -50%);
     }
 }
 
