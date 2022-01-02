@@ -14,13 +14,12 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header start */
-.header {
+body .header {
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1;
     padding: 30px 0px;
-    background: transparent;
 }
 .header .col-12 {
     display: flex;
