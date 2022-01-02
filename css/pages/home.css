@@ -8,6 +8,8 @@
 /* components */
 @import '../components/button.css';
 @import '../components/logo-slider.css';
+@import '../components/progress-bar.css';
+@import '../components/button.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -269,6 +271,43 @@ li {
 /* about us end */
 
 /* about us /w graf start */
+
+.container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+@media (min-width: 576px) {
+    .about {
+        padding-left: 0;
+    }
+    .title {
+        font-size: 26px;
+    }
+}
+@media (min-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .about {
+        padding-left: 50px;
+    }
+    .title {
+        font-size: 27px;
+    }
+    .container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+@media (min-width: 1200px) {
+    .about {
+        padding-left: 40px;
+    }
+}
+
 /* about us /w graf end */
 
 /* services start */
