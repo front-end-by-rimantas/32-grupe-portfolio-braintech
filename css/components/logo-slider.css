@@ -1,0 +1,46 @@
+.logo-slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo-slider > .row {
+    overflow: hidden;
+    height: 70px;
+}
+
+.logo-slider .logo-holder {
+    position: relative;
+}
+
+.logo-slider .logo-link {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.logo-slider .logo-link:hover {
+    height: 140px;
+}
+
+.logo-slider .logo-holder img {
+    object-fit: contain;
+    width: 100%;
+    height: 70px;
+}
+
+.logo-slider .color-logo {
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: all 0.8s;
+}
+.logo-slider .color-logo:hover {
+    filter: grayscale(0%);
+}
+
+.logo-slider .grey-logo {
+    filter: grayscale(100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
