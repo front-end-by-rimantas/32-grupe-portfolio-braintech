@@ -1,0 +1,74 @@
+.container > .flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.bg-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60%;
+    border-radius: 0.8em;
+    position: relative;
+    padding: 30px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+.bg-box:hover {
+    background-color: var(--orange);
+    transition: all 0.5s;
+}
+.icon {
+    display: inline-block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    line-height: 10px;
+    vertical-align: middle;
+}
+.icon-hover {
+    display: inline-block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    line-height: 10px;
+    position: absolute;
+}
+.icon-hover:hover {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 1s;
+    position: absolute;
+}
+.title-h3 > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #1c1b1b;
+    text-align: left;
+    text-decoration: none;
+}
+.title-h3 > a:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.number {
+    display: inline-block;
+    float: right;
+    font-size: 60px;
+    font-weight: 900;
+    right: 20px;
+    position: absolute;
+    line-height: 70px;
+    color: #02010108;
+}
+.number:hover {
+    color: #fff;
+    transition: all 0.5s;
+}

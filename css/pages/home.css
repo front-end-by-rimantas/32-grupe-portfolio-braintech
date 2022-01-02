@@ -10,6 +10,7 @@
 @import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
 @import '../components/button.css';
+@import '../components/services-item.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -40,6 +41,56 @@
 /* company logos /w hover #1 end */
 
 /* about us start */
+.container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.title-h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.count {
+    font-size: 45px;
+    font-weight: 900;
+}
+.org-color {
+    color: var(--orange);
+}
+.blue-color {
+    color: var(--primary-color);
+}
+.right-column {
+    display: flex;
+    column-gap: 10px;
+}
+.ptop-40 {
+    padding-top: 40px;
+}
+.pleft-10 {
+    padding-left: 10px;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+
 /* about us end */
 
 /* about us /w graf start */
@@ -83,6 +134,42 @@
 /* about us /w graf end */
 
 /* services start */
+.container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.grey-color {
+    background-color: #f6f7f9;
+}
+.btn-secondary-color {
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        text-align: center;
+    }
+    .content {
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+    .bg-box {
+        gap: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .section-title {
+        text-align: center;
+    }
+    .content {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+    .bg-box {
+        gap: 10px;
+    }
+}
 /* services end */
 
 /* why chose us start */
