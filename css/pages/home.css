@@ -33,6 +33,10 @@ body .header {
     height: 35px;
 }
 
+.header .logo-dark {
+    display: none;
+}
+
 .header .links {
     display: flex;
 }
@@ -51,6 +55,7 @@ li {
     display: flex;
     justify-content: space-between;
     margin-right: 80px;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -138,6 +143,15 @@ body .header-white {
     background: #fff;
 }
 
+.header-white .logo {
+    display: none;
+}
+
+.header-white .logo-dark {
+    display: flex;
+    height: 35px;
+}
+
 .header-white .navigation > a:first-child {
     color: var(--light-blue);
 }
@@ -184,6 +198,15 @@ body .header-white {
     color: #000;
 }
 
+@media (max-width: 992px) {
+    .header-white .links {
+        display: none;
+    }
+
+    .header-white .fa-bars {
+        display: flex;
+    }
+}
 /* header end */
 
 /* hero start */
@@ -209,6 +232,7 @@ body .header-white {
     text-align: center;
     background-color: #fff;
     position: relative;
+    cursor: pointer;
 }
 
 .hero .fa-play > .pulse {
