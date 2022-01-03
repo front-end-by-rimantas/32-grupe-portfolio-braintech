@@ -71,6 +71,7 @@
 .footer-bg {
   background-image: url(../../img/footer/footer-bg.png);
   background-position: center;
+  background-size: cover;
 }
 
 footer img {
@@ -170,9 +171,9 @@ footer .back-to-top {
   text-align: center;
   border-radius: 0.75em;
   font-size: 30px;
-  position: absolute;
+  position: fixed;
+  bottom: 35px;
   right: 20px;
-  margin-top: -0.1em;
 }
 
 footer .back-to-top:hover {
