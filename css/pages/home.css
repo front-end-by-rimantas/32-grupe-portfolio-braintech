@@ -316,12 +316,15 @@ li {
 /* why chose us end */
 
 /* lets talk start */
+body .lets-talk {
+    background-color: #f6f7f9;
+}
+
 .service {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-color: #f6f7f9;
 }
 .service > .contact {
     display: flex;
@@ -366,7 +369,7 @@ li {
 }
 .contact-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     text-align: left;
     padding: 20px;
