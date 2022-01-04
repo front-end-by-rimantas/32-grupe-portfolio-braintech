@@ -15,10 +15,6 @@
 
 /* header start */
 
-.container {
-    /* overflow: hidden; */
-}
-
 body .header {
     display: flex;
     top: 0;
@@ -550,7 +546,7 @@ body .header-white {
 
 .testimonials > .row > .review-box > h2 {
     display: flex;
-    width: 200px;
+    width: calc(100% - 130px);
     flex-direction: row;
     flex-wrap: wrap;
     transform: translate(110px, 115px);
@@ -558,7 +554,7 @@ body .header-white {
 
 .testimonials > .row > .review-box > .duties {
     display: flex;
-    width: 200px;
+    width: calc(100% - 130px);
     flex-direction: row;
     flex-wrap: wrap;
     transform: translate(110px, 18px);
