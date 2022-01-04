@@ -1,0 +1,93 @@
+.container > .flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.bg-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    border-radius: 0.8em;
+    position: relative;
+    padding: 30px;
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 11px #14d3f50a;
+}
+.bgb1:hover {
+    background-color: var(--orange);
+}
+.bgb2:hover {
+    background-color: var(--pink);
+}
+.bgb3:hover {
+    background-color: var(--cyan);
+}
+.bgb4:hover {
+    background-color: var(--green);
+}
+.bgb5:hover {
+    background-color: var(--blue);
+}
+.bgb6:hover {
+    background-color: var(--light-blue);
+}
+.bgb7:hover {
+    background-color: var(--yellow);
+}
+.bg-box > .icon {
+    display: inline-block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    line-height: 10px;
+    position: absolute;
+    opacity: 1;
+}
+
+.icon-hover {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    line-height: 10px;
+    position: relative;
+    opacity: 0;
+}
+.bg-box:hover > .icon-hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.bg-box:hover > .title-h3 > a {
+    color: #fff;
+}
+.bg-box:hover > .smp-text {
+    color: #f7f7f7;
+}
+.bg-box:hover > .number {
+    color: #faf5f59a;
+}
+.title-h3 > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #1c1b1b;
+    text-align: left;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+.number {
+    display: inline-block;
+    float: right;
+    font-size: 60px;
+    font-weight: 900;
+    right: 20px;
+    position: absolute;
+    line-height: 70px;
+    color: #02010108;
+}
