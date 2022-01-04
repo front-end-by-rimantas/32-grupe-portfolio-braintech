@@ -337,6 +337,7 @@ body .lets-talk {
     flex-direction: row;
     margin-bottom: 30px;
 }
+
 .main-info {
     font-size: 30px;
     margin-bottom: 25px;
@@ -360,6 +361,11 @@ body .lets-talk {
     margin-bottom: 10px;
 }
 
+.contact-title:hover {
+    color:var(--blue);
+    transition: all 0.3s
+}
+
 .contact-address {
     margin-top: 10px;
     padding-left: 20px;
@@ -377,7 +383,6 @@ body .lets-talk {
 }
 
 .form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -396,6 +401,20 @@ body .lets-talk {
     padding: 15px;
     background-color: #f6f7f9;
     border-style: none;
+}
+
+@media (min-width: 992px) {
+    .container, .lets-talk > .row, .service {
+    width: 960px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    }
+.btn-submit {
 }
 /* lets talk end */
 
