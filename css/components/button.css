@@ -1,0 +1,47 @@
+.btn-secondary-color {
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(
+        to right,
+        var(--secondary-color),
+        #ee741f
+    );
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Livvic;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.btn-secondary-color:hover {
+    background-image: linear-gradient(
+        to bottom,
+        var(--secondary-color),
+        #ee741f
+    );
+    transition: all 0.4s;
+}
+@media (max-width: 463px) {
+    .btn-secondary-color {
+        padding: 10px 25px;
+    }
+}
+.btn-primary-color {
+    padding: 6px 20px;
+    color: #fff;
+    background-image: linear-gradient(to right, var(--primary-color), #4d93eb);
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Livvic;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+}
+.btn-primary-color:hover {
+    background-image: linear-gradient(to right, #4d93eb, var(--primary-color));
+    transition: all 0.4s;
+}
