@@ -501,29 +501,54 @@ body .header-white {
 /* lets talk end */
 
 /* blogs start */
+
 .blog {
-    overflow: hidden;
+    --blog-row-height: 600px;
 }
-
-.blog .row {
-    height: min-content;
-    width: fit-content;
-    overflow: hidden;
-}
-
 .blog .blog-description {
-    max-width: 350px;
+    max-width: 460px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.blog-description .section-title {
+    width: fit-content;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.blog-description .section-title::before {
+    display: none;
+}
+.blog-description .section-title::after {
+    display: none;
+}
+
+.blog .blog-content {
+    height: var(--blog-row-height);
+    overflow: hidden;
+}
+.blog .row .blog-unit {
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    box-shadow: 0 0 20px #eeeeee82;
+    transition-property: margin-top;
+    transition-duration: 0.5s;
+}
+
+.blog .blog-unit:hover {
+    margin-top: 0px;
 }
 .blog .blog-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.blog div:first-child {
+.blog-unit > div:first-child {
     position: relative;
+    background-color: #0d69da;
 }
 
 .blog .image-link {
@@ -543,39 +568,12 @@ body .header-white {
     );
 }
 
-.blog-description .section-title {
-    width: fit-content;
-    left: 0;
-    color: var(--primary-color);
-}
-
-.blog-description .section-title::before {
-    display: none;
-}
-.blog-description .section-title::after {
-    display: none;
-}
-
 .blog .image-link:hover {
     background: linear-gradient(
         307deg,
         var(--primary-color),
         var(--light-blue)
     );
-}
-
-.blog .row .blog-unit {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 15px;
-    /* min-width: 300px; */
-    box-shadow: 0 0 20px #eeeeee82;
-    transition-property: margin-top;
-    transition-duration: 0.5s;
-}
-
-.blog .blog-unit:hover {
-    margin-top: 0px;
 }
 
 .blog-info {
@@ -610,6 +608,30 @@ body .header-white {
     }
     100% {
         color: var(--blue);
+    }
+}
+
+@media (min-width: 500px) {
+    .blog {
+        --blog-row-height: 680px;
+    }
+}
+
+@media (min-width: 768px) {
+    .blog {
+        --blog-row-height: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .blog {
+        --blog-row-height: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blog {
+        --blog-row-height: 600px;
     }
 }
 
