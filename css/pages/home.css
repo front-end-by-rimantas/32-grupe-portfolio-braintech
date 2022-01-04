@@ -403,6 +403,75 @@ body .lets-talk {
 /* blogs end */
 
 /* testimonials start */
+
+.testimonials {
+    background-color: #f6f7f9;
+}
+
+.testimonials > .row img {
+    display: none;
+}
+
+.testimonials > .row > .testimon-clmn {
+    margin-bottom: 40px;
+}
+
+.testimonials > .row > .review-box {
+    background-color: #fff;
+}
+
+.testimonials > .row > .review-box > .quote-img {
+    display: flex;
+    width: 50px;
+    margin: 50px 0 0 40px;
+}
+
+.testimonials > .row > .review-box > .review-quote {
+    display: flex;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 40px 50px -60px 40px;
+}
+
+.testimonials > .row > .review-box > .smiley-guy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100px;
+    border-radius: 50%;
+    transform: translate(0px, 65px);
+}
+
+.testimonials > .row > .review-box > h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translate(110px, 115px);
+}
+
+.testimonials > .row > .review-box > .duties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translate(110px, 18px);
+}
+
+@media (min-width: 992px) {
+    .testimonials > .row img {
+        display: flex;
+        width: 100%;
+    }
+
+    .testimonials > .row > .testimon-clmn {
+        padding-left: 40px;
+    }
+
+    .testimonials > .row > .review-box {
+        border-left: 40px solid #f6f7f9;
+    }
+}
+
 /* testimonials end */
 
 /* company logos /w hover #2 start */
