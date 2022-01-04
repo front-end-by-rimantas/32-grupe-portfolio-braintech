@@ -245,7 +245,6 @@ li {
         transform: translate(-5%, -50%);
     }
 }
-
 .background-col {
     background: #0d69da;
     background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
@@ -300,22 +299,52 @@ li {
 }
 .right-column {
     display: flex;
+    width: 100%;
     column-gap: 10px;
+    padding-left: 20px;
 }
 .ptop-40 {
     padding-top: 40px;
 }
 .pleft-10 {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 @media (min-width: 576px) {
-}
+    .align-items >.row > .right-column.flex-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+    .pleft-10 {
+        padding-left: 0;
+    }
+    .bg-box{
+        gap: 10px;
+    }
+    .right-column {
+        padding-top: 30px;
+    }
+}  
 @media (min-width: 768px) {
+    .align-items > .row > .right-column.flex-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+    .pleft-10 {
+        padding-top: 20px;
+    }
 }
 @media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
+    .align-items >.row > .right-column.flex-box {
+        flex-wrap: wrap;
+        row-gap: 10px;  
+    }
+    .pleft-10 {
+        padding-top: 10px;
+        padding-right: 10px;
+    }
 }
 
 /* about us end */
@@ -365,38 +394,43 @@ li {
     padding-top: 70px;
     padding-bottom: 80px;
 }
+.services > .row .title {
+    text-align: left;
+}
 .grey-color {
     background-color: #f6f7f9;
 }
-.btn-secondary-color {
+
+@media (min-width: 576px){
+      .services > .row .title {
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
-    .section-title {
+    .services > .row .title {
         text-align: center;
+    }
+    .bg-box {
+        gap: 20px;
+    }
+    .services > .row.ptop-40 {
+        padding-top: 0px;
+    }
+}
+@media (min-width: 992px) {
+    .services > .row .title {
+        text-align: left;
     }
     .content {
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.8em;
     }
     .bg-box {
         gap: 20px;
     }
-}
-@media (max-width: 992px) {
-    .section-title {
-        text-align: center;
-    }
-    .content {
-        text-align: left;
-        font-size: 14px;
-        line-height: 1.8em;
-    }
-    .bg-box {
-        gap: 10px;
-    }
-}
+    
 /* services end */
 
 /* why chose us start */
