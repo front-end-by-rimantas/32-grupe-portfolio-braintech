@@ -19,6 +19,7 @@ body .header {
     display: flex;
     top: 0;
     padding: 30px 0px;
+    overflow: hidden;
     background: #0d69da;
     background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
 }
@@ -213,6 +214,7 @@ body .header-white {
 
 .hero {
     display: flex;
+    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 250px;
 }
@@ -322,7 +324,7 @@ body .header-white {
         display: inline-block;
         position: absolute;
         top: 50%;
-        transform: translate(-5%, -50%);
+        transform: translate(-5%, -60%);
     }
 }
 
