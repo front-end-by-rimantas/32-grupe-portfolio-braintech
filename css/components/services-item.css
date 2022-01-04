@@ -38,27 +38,34 @@
 .bgb7:hover {
     background-color: var(--yellow);
 }
-
-.icon {
+.bg-box > .icon {
     display: inline-block;
     float: left;
     width: 70px;
     height: 70px;
     padding: 5px;
     line-height: 10px;
-    position: relative;
+    position: absolute;
+    opacity: 1;
 }
+
 .icon-hover {
     display: inline-block;
     width: 70px;
     height: 70px;
     padding: 5px;
     line-height: 10px;
-    position: absolute;
+    position: relative;
     opacity: 0;
 }
-.icon-hover:hover {
+.bg-box:hover > .icon-hover {
     opacity: 1;
+}
+.bg-box:hover > .title-h3 > a {
+    color: #fff;
+}
+.bg-box:hover > .smp-text {
+    color: #f7f7f7;
 }
 .title-h3 > a {
     padding-top: 5px;
@@ -68,13 +75,7 @@
     text-align: left;
     text-decoration: none;
     overflow: hidden;
-}
-.title-h3 > a:hover {
-    color: #fff;
-    transition: all;
-}
-.smp-text:hover {
-    color: #fff;
+    position: relative;
 }
 .number {
     display: inline-block;
