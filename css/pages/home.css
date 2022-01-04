@@ -15,6 +15,10 @@
 
 /* header start */
 
+.container {
+    overflow: hidden;
+}
+
 body .header {
     display: flex;
     top: 0;
