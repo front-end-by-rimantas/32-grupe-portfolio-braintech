@@ -8,11 +8,8 @@
 /* components */
 @import '../components/button.css';
 @import '../components/logo-slider.css';
-@import '../components/services-item.css';
-@import '../components/button.css';
-@import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
-@import '../components/button.css';
+@import '../components/services-item.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -612,9 +609,262 @@ body .header-white {
 /* why chose us end */
 
 /* lets talk start */
+body .lets-talk {
+    background-color: #f6f7f9;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.service > .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.main-info {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.main-title {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.contact-img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-title {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-title:hover {
+    color:var(--blue);
+    transition: all 0.3s
+}
+
+.contact-address {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #454545;
+    font-size: 15px;
+    line-height: normal;
+}
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.form-info {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.form-row > input {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #f6f7f9;
+    border-style: none;
+}
+
+@media (min-width: 992px) {
+    .container, .lets-talk > .row, .service {
+    width: 960px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    }
+.btn-submit {
+}
 /* lets talk end */
 
 /* blogs start */
+
+.blog {
+    --blog-row-height: 600px;
+}
+.blog .blog-description {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-description .section-title {
+    width: fit-content;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.blog-description .section-title::before {
+    display: none;
+}
+.blog-description .section-title::after {
+    display: none;
+}
+
+.blog .blog-content {
+    height: var(--blog-row-height);
+    overflow: hidden;
+}
+.blog .row .blog-unit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 160px;
+    padding: 15px;
+    box-shadow: 0 0 20px #c2c2c240;
+    transition-property: margin-top;
+    transition-duration: 0.5s;
+}
+
+.blog .blog-unit:hover {
+    margin-top: 0px;
+}
+.blog .blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.blog-unit > div:first-child {
+    position: relative;
+    background-color: #0d69da;
+}
+
+.blog .image-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    right: 1.3em;
+    bottom: 1.3em;
+    z-index: 0;
+    border-radius: 7.5em;
+    padding: 0.8em 1.2em;
+    background: linear-gradient(
+        124deg,
+        var(--primary-color),
+        var(--light-blue)
+    );
+}
+
+.blog .image-link:hover {
+    background: linear-gradient(
+        307deg,
+        var(--primary-color),
+        var(--light-blue)
+    );
+}
+
+.blog-info {
+    display: flex;
+    font-size: 14px;
+    margin: 30px 0 20px;
+}
+
+.blog-info > .blog-date {
+    color: var(--font-color);
+}
+
+.blog-info > p + p {
+    margin-left: 10px;
+}
+
+.blog-info .blog-icon {
+    padding: 0 7px;
+    color: var(--blue);
+}
+
+.blog-unit .blog-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.blog-unit .blog-link:hover {
+    animation-name: link-blue;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.blog-unit > .blog-article {
+    width: 90%;
+    color: var(--font-color);
+}
+
+.blog-unit > .more-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 600;
+    width: 110px;
+    transition: all 0.4s;
+}
+
+.blog-unit > .more-link:hover {
+    color: var(--blue);
+    width: 120px;
+}
+.blog-unit > .more-link > i {
+    padding-top: 3px;
+}
+@keyframes link-blue {
+    0% {
+        color: #000;
+    }
+    100% {
+        color: var(--blue);
+    }
+}
+
+@media (min-width: 450px) {
+    .blog {
+        --blog-row-height: 720px;
+    }
+}
+@media (min-width: 600px) {
+    .blog {
+        --blog-row-height: 650px;
+    }
+}
+
 /* blogs end */
 
 /* testimonials start */
@@ -772,6 +1022,7 @@ footer li > a:hover {
     padding: 16px 60px 16px 20px;
     background-color: #fff;
     border-radius: 30px 0 0 30px;
+    margin-top: 20px;
 }
 
 footer .subscribe > input {
@@ -781,7 +1032,6 @@ footer .subscribe > input {
 
 footer .subscribe-icon {
     display: inline-block;
-    /* position: relative; */
     right: 2em;
 }
 
@@ -795,6 +1045,7 @@ footer .subscribe-icon > a {
     border-radius: 1.4em;
     position: absolute;
     right: auto;
+    margin-top: 20px;
 }
 
 .subscribe-icon > .fa {
@@ -803,7 +1054,6 @@ footer .subscribe-icon > a {
 
 footer .footer-bot {
     display: flex;
-    flex-flow: row wrap-reverse;
     padding: 15px 20px;
     font-size: 16px;
 }
