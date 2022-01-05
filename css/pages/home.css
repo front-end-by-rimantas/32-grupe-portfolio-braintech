@@ -382,14 +382,9 @@ body .header-white {
 .right-column {
     display: flex;
     width: 100%;
-    column-gap: 10px;
-    padding-left: 20px;
 }
 .ptop-40 {
     padding-top: 40px;
-}
-.pleft-10 {
-    padding-left: 5px;
 }
 
 @media (min-width: 576px) {
@@ -419,10 +414,6 @@ body .header-white {
     }
 }
 @media (min-width: 992px) {
-    .align-items > .row > .right-column.flex-box {
-        flex-wrap: wrap;
-        row-gap: 10px;
-    }
     .pleft-10 {
         padding-top: 10px;
         padding-right: 10px;
