@@ -514,6 +514,7 @@ body .lets-talk {
     padding: 60px 20px;
     }
 .btn-submit {
+    border-radius: 3px;
 }
 /* lets talk end */
 
