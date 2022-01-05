@@ -6,13 +6,10 @@
 @import '../3rd-party/font-awesome.min.css';
 
 /* components */
-@import '../components/button.css';
-@import '../components/logo-slider.css';
 
 @import '../components/button.css';
 @import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
-@import '../components/button.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
