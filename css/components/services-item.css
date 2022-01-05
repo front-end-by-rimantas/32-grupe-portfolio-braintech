@@ -61,7 +61,9 @@
 .bg-box:hover > .icon-hover {
     opacity: 1;
     transform: scale(1.1);
-    visibility: none;
+}
+.bg-box:hover > .icon {
+    display: none;
 }
 .bg-box:hover > .title-h3 > a {
     color: #fff;

@@ -299,7 +299,6 @@ li {
 }
 .right-column {
     display: flex;
-    width: 100%;
     column-gap: 10px;
     padding-left: 20px;
 }
@@ -309,10 +308,13 @@ li {
 .pleft-10 {
     padding-left: 5px;
 }
-  
+
 @media (min-width: 576px) {
     .align-items > .row.bg-box {
         padding: 15px;
+    }
+    .right-column {
+        flex-wrap: nowrap;
     }
     .pleft-10 {
         padding-left: 15px;
@@ -320,24 +322,25 @@ li {
     .right-column {
         padding-top: 30px;
     }
-    .content {
-        font-size: 14px;
-        line-height: 30px;
+    .smp-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8em;
     }
-}  
+}
 @media (min-width: 768px) {
-    .flex-box {
-        
+    .right-column {
+        flex-wrap: nowrap;
     }
     .pleft-10 {
         padding-top: 20px;
     }
-    .content {
-        font-size: 14px;
+    .smp-text {
+        text-align: left;
+        font-size: 18px;
         line-height: 1.8em;
     }
 }
-
 /* about us end */
 
 /* about us /w graf start */
@@ -392,9 +395,12 @@ li {
     background-color: #f6f7f9;
 }
 
-@media (min-width: 576px){
-      .services > .row .title {
+@media (min-width: 576px) {
+    .services > .row .title {
         text-align: center;
+    }
+    .bg-box {
+        gap: 20px;
     }
 }
 
@@ -413,7 +419,7 @@ li {
     .services > .row .title {
         text-align: left;
     }
-    .content {
+    .bg-box > .smp-text {
         text-align: left;
         font-size: 18px;
         line-height: 1.8em;
@@ -421,7 +427,7 @@ li {
     .bg-box {
         gap: 20px;
     }
-    
+}
 /* services end */
 
 /* why chose us start */
