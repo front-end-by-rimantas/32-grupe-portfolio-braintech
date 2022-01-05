@@ -29,53 +29,33 @@
     width: 90%;
     height: 100%;
 }
-.progress-bar .bg-orange > .loading {
+.progress-bar .loading {
     width: 0;
     height: 100%;
     background-image: repeating-linear-gradient(
         45deg,
-        #fd7c2d 0 5px,
-        var(--orange) 5px 10px
+        var(--light) 0 5px,
+        var(--dark) 5px 10px
     );
     animation-name: loading;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-.progress-bar .bg-green > .loading {
-    width: 0;
-    height: 100%;
-    background-image: repeating-linear-gradient(
-        45deg,
-        #03dea7a1 0 5px,
-        var(--green) 5px 10px
-    );
-    animation-name: loading;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+.bg-orange {
+    --light: #fd7c2d;
+    --dark: var(--orange);
 }
-.progress-bar .bg-light-blue > .loading {
-    width: 0;
-    height: 100%;
-    background-image: repeating-linear-gradient(
-        45deg,
-        #2ea8fd 0 5px,
-        var(--light-blue) 5px 10px
-    );
-    animation-name: loading;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+.bg-green {
+    --light: #03dea7a1;
+    --dark: var(--green);
 }
-.progress-bar .bg-pink > .loading {
-    width: 0;
-    height: 100%;
-    background-image: repeating-linear-gradient(
-        45deg,
-        #f22b88d3 0 5px,
-        var(--pink) 5px 10px
-    );
-    animation-name: loading;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+.bg-light-blue {
+    --light: #2ea8fd;
+    --dark: var(--light-blue);
+}
+.bg-pink {
+    --light: #f22b88d3;
+    --dark: var(--pink);
 }
 @keyframes loading {
     0% {
