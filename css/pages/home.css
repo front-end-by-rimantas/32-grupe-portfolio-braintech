@@ -245,7 +245,6 @@ li {
         transform: translate(-5%, -50%);
     }
 }
-
 .background-col {
     background: #0d69da;
     background: linear-gradient(270deg, #0d69da 27%, #03228f 72%);
@@ -275,7 +274,7 @@ li {
 .flex-box {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .counter {
     display: flex;
@@ -301,23 +300,47 @@ li {
 .right-column {
     display: flex;
     column-gap: 10px;
+    padding-left: 20px;
 }
 .ptop-40 {
     padding-top: 40px;
 }
 .pleft-10 {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 @media (min-width: 576px) {
+    .align-items > .row.bg-box {
+        padding: 15px;
+    }
+    .right-column {
+        flex-wrap: nowrap;
+    }
+    .pleft-10 {
+        padding-left: 15px;
+    }
+    .right-column {
+        padding-top: 30px;
+    }
+    .smp-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
 }
 @media (min-width: 768px) {
+    .right-column {
+        flex-wrap: nowrap;
+    }
+    .pleft-10 {
+        padding-top: 20px;
+    }
+    .smp-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
 }
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-}
-
 /* about us end */
 
 /* about us /w graf start */
@@ -365,36 +388,44 @@ li {
     padding-top: 70px;
     padding-bottom: 80px;
 }
+.services > .row .title {
+    text-align: left;
+}
 .grey-color {
     background-color: #f6f7f9;
 }
-.btn-secondary-color {
-}
 
-@media (min-width: 768px) {
-    .section-title {
+@media (min-width: 576px) {
+    .services > .row .title {
         text-align: center;
-    }
-    .content {
-        text-align: left;
-        font-size: 16px;
-        line-height: 1.8em;
     }
     .bg-box {
         gap: 20px;
     }
 }
-@media (max-width: 992px) {
-    .section-title {
+
+@media (min-width: 768px) {
+    .services > .row .title {
         text-align: center;
     }
-    .content {
+    .bg-box {
+        gap: 20px;
+    }
+    .services > .row.ptop-40 {
+        padding-top: 0px;
+    }
+}
+@media (min-width: 992px) {
+    .services > .row .title {
         text-align: left;
-        font-size: 14px;
+    }
+    .bg-box > .smp-text {
+        text-align: left;
+        font-size: 18px;
         line-height: 1.8em;
     }
     .bg-box {
-        gap: 10px;
+        gap: 20px;
     }
 }
 /* services end */

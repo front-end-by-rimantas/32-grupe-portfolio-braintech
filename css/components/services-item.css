@@ -2,48 +2,77 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     row-gap: 20px;
 }
 .bg-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    height: 60%;
-    border-radius: 0.8em;
     position: relative;
-    padding: 30px;
-    padding-top: 20px;
+    padding: 2em;
+    margin-top: 10px;
+    border-radius: 0.8em;
+    margin-bottom: 10px;
     background-color: #fff;
+    box-shadow: 0px 0px 50px 11px #14d3f50a;
 }
-.bg-box:hover {
+.bgb1:hover {
     background-color: var(--orange);
-    transition: all 0.5s;
 }
-.icon {
+.bgb2:hover {
+    background-color: var(--pink);
+}
+.bgb3:hover {
+    background-color: var(--cyan);
+}
+.bgb4:hover {
+    background-color: var(--green);
+}
+.bgb5:hover {
+    background-color: var(--blue);
+}
+.bgb6:hover {
+    background-color: var(--light-blue);
+}
+.bgb7:hover {
+    background-color: var(--yellow);
+}
+.bg-box > .icon {
     display: inline-block;
     float: left;
     width: 70px;
     height: 70px;
     padding: 5px;
     line-height: 10px;
-    vertical-align: middle;
+    position: absolute;
+    opacity: 1;
 }
+
 .icon-hover {
     display: inline-block;
-    float: left;
     width: 70px;
     height: 70px;
     padding: 5px;
     line-height: 10px;
-    position: absolute;
-}
-.icon-hover:hover {
-    visibility: hidden;
+    position: relative;
     opacity: 0;
-    transform: scale(1.5);
-    transition: all 1s;
-    position: absolute;
+}
+.bg-box:hover > .icon-hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.bg-box:hover > .icon {
+    display: none;
+}
+.bg-box:hover > .title-h3 > a {
+    color: #fff;
+}
+.bg-box:hover > .smp-text {
+    color: #f7f7f7;
+}
+.bg-box:hover > .number {
+    color: #faf5f59a;
 }
 .title-h3 > a {
     padding-top: 5px;
@@ -52,11 +81,8 @@
     color: #1c1b1b;
     text-align: left;
     text-decoration: none;
-}
-.title-h3 > a:hover {
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
 }
 .number {
     display: inline-block;
@@ -67,8 +93,4 @@
     position: absolute;
     line-height: 70px;
     color: #02010108;
-}
-.number:hover {
-    color: #fff;
-    transition: all 0.5s;
 }
