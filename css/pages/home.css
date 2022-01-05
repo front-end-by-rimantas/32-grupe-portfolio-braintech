@@ -356,7 +356,7 @@ body .header-white {
 .flex-box {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .counter {
     display: flex;
@@ -381,44 +381,49 @@ body .header-white {
 }
 .right-column {
     display: flex;
-    width: 100%;
+    column-gap: 10px;
+    padding-left: 20px;
 }
 .ptop-40 {
     padding-top: 40px;
 }
+.pleft-10 {
+    padding-left: 10px;
+}
 
 @media (min-width: 576px) {
-    .align-items > .row > .right-column.flex-box {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    .align-items > .row.bg-box {
+        padding: 15px;
+    }
+    .right-column {
+        flex-wrap: nowrap;
     }
     .pleft-10 {
-        padding-left: 0;
-    }
-    .bg-box {
-        gap: 10px;
+        padding-left: 15px;
     }
     .right-column {
         padding-top: 30px;
     }
+    .smp-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
 }
 @media (min-width: 768px) {
-    .align-items > .row > .right-column.flex-box {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    .right-column {
+        flex-wrap: nowrap;
     }
     .pleft-10 {
         padding-top: 20px;
     }
-}
-@media (min-width: 992px) {
-    .pleft-10 {
-        padding-top: 10px;
-        padding-right: 10px;
+    .smp-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8em;
     }
 }
+
 /* about us end */
 
 /* about us /w graf start */
@@ -463,9 +468,12 @@ body .header-white {
     background-color: #f6f7f9;
 }
 
-@media (min-width: 576px){
-      .services > .row .title {
+@media (min-width: 576px) {
+    .services > .row .title {
         text-align: center;
+    }
+    .bg-box {
+        gap: 20px;
     }
 }
 
@@ -492,6 +500,7 @@ body .header-white {
     .bg-box {
         gap: 20px;
     }
+}
 /* services end */
 
 /* why chose us start */
