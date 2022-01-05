@@ -274,7 +274,7 @@ li {
 .flex-box {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .counter {
     display: flex;
@@ -309,41 +309,32 @@ li {
 .pleft-10 {
     padding-left: 5px;
 }
-
+  
 @media (min-width: 576px) {
-    .align-items >.row > .right-column.flex-box {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; 
+    .align-items > .row.bg-box {
+        padding: 15px;
     }
     .pleft-10 {
-        padding-left: 0;
-    }
-    .bg-box{
-        gap: 10px;
+        padding-left: 15px;
     }
     .right-column {
         padding-top: 30px;
     }
+    .content {
+        font-size: 14px;
+        line-height: 30px;
+    }
 }  
 @media (min-width: 768px) {
-    .align-items > .row > .right-column.flex-box {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; 
+    .flex-box {
+        
     }
     .pleft-10 {
         padding-top: 20px;
     }
-}
-@media (min-width: 992px) {
-    .align-items >.row > .right-column.flex-box {
-        flex-wrap: wrap;
-        row-gap: 10px;  
-    }
-    .pleft-10 {
-        padding-top: 10px;
-        padding-right: 10px;
+    .content {
+        font-size: 14px;
+        line-height: 1.8em;
     }
 }
 
