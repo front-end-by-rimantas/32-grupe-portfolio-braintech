@@ -691,7 +691,7 @@ body .lets-talk {
 
 .form-row > input {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 15px;
     padding: 15px;
     background-color: #f6f7f9;
@@ -708,14 +708,47 @@ body .lets-talk {
     .service {
         width: 960px;
         display: flex;
-        width: 100%;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+       
         gap: 20px;
-        padding: 60px 20px;
+        padding: 30px 25px 35px;
+    }
+
+    .lets-talk > .contact-form {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
     }
 }
+
+@media (min-width: 1200px) {
+  .container > .row {
+    width: 1140px;
+  }
+  .lets-talk > .row,
+    .service {
+        width: 960px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       justify-content: center;
+        gap: 20px;
+        padding: 30px 25px 35px;
+    }
+
+    .lets-talk > .contact-form {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    }
+    
+
+
 /* lets talk end */
 
 /* blogs start */
