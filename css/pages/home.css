@@ -9,11 +9,15 @@
 @import '../components/button.css';
 @import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
+@import '../components/rain.css';
 @import '../components/services-item.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header start */
+body .header-hero {
+    position: relative;
+}
 
 body .header {
     display: flex;

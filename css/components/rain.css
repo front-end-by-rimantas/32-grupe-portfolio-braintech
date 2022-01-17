@@ -1,0 +1,78 @@
+.rain {
+    width: 100%;
+}
+
+.drop1 {
+    display: inline-block;
+    font-size: 1px;
+    width: 1px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #fff2;
+    position: absolute;
+    left: 30px;
+}
+
+.drop1 > .drop-fall {
+    animation-delay: 0.5s;
+}
+
+.drop2 {
+    display: inline-block;
+    font-size: 1px;
+    width: 1px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #fff2;
+    position: absolute;
+    right: 50%;
+}
+.drop3 {
+    display: inline-block;
+    font-size: 1px;
+    width: 1px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #fff2;
+    position: absolute;
+    right: 30px;
+}
+
+.drop3 > .drop-fall {
+    animation-delay: 1s;
+}
+
+.rain .drop-fall {
+    display: inline-block;
+    height: 80px;
+    width: 3px;
+    left: -1.5px;
+    margin-top: 0px;
+    position: absolute;
+    background: #fff;
+    background: linear-gradient(180deg, #fff 50%, var(--light-blue) 100%);
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    0% {
+        margin-top: 0;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 100vh;
+        opacity: 0;
+    }
+}
