@@ -682,6 +682,7 @@ body .lets-talk {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    width: 100%;
 }
 
 .form-info {
@@ -696,56 +697,6 @@ body .lets-talk {
     padding: 15px;
     background-color: #f6f7f9;
     border-style: none;
-}
-
-@media (min-width: 992px) {
-    body .lets-talk {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .lets-talk > .row,
-    .service {
-        width: 960px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        gap: 20px;
-        padding: 30px 25px 35px;
-    }
-
-    .lets-talk > .contact-form {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: left;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container > .row {
-        width: 1140px;
-    }
-    .lets-talk > .row,
-    .service {
-        width: 960px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        padding: 30px 25px 35px;
-    }
-
-    .lets-talk > .contact-form {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-    }
 }
 
 /* lets talk end */
