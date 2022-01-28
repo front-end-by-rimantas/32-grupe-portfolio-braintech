@@ -692,6 +692,7 @@ body .lets-talk {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    width: 100%;
 }
 
 .form-info {
@@ -701,31 +702,13 @@ body .lets-talk {
 
 .form-row > input {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 15px;
     padding: 15px;
     background-color: #f6f7f9;
     border-style: none;
 }
 
-@media (min-width: 992px) {
-    body .lets-talk {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .lets-talk > .row,
-    .service {
-        width: 960px;
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        padding: 60px 20px;
-    }
-}
 /* lets talk end */
 
 /* blogs start */
@@ -879,6 +862,10 @@ body .lets-talk {
 @media (min-width: 600px) {
     .blog {
         --blog-row-height: 650px;
+    }
+
+    .btn-form-submit {
+        border-radius: 3px;
     }
 }
 
