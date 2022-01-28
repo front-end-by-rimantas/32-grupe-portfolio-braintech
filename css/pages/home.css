@@ -10,6 +10,7 @@
 @import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
 @import '../components/services-item.css';
+@import '../components/services.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -387,19 +388,28 @@ body .header-white {
 .pleft-10 {
     padding-left: 10px;
 }
-
+@media (min-width: 360px) {
+    .right-column {
+        flex-direction: column;
+    }
+    .ptop-40 {
+        padding-top: 0;
+    }
+}
 @media (min-width: 576px) {
-    .align-items > .row.bg-box {
+    .align-items > .row > .bg-box {
         padding: 15px;
     }
     .right-column {
+        flex-direction: row;
         flex-wrap: nowrap;
+        padding-top: 30px;
+    }
+    .ptop-40 {
+        padding-top: 30px;
     }
     .pleft-10 {
         padding-left: 15px;
-    }
-    .right-column {
-        padding-top: 30px;
     }
     .smp-text {
         text-align: left;
