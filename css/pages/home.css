@@ -355,6 +355,12 @@ body .header-white {
 /* company logos /w hover #1 end */
 
 /* about us start */
+.right-column {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    column-gap: 10px;
+}
 .flex-box {
     display: flex;
     flex-direction: column;
@@ -381,16 +387,17 @@ body .header-white {
 .blue-color {
     color: var(--primary-color);
 }
-.right-column {
+.btn-position {
     display: flex;
-    column-gap: 10px;
-    padding-left: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
 }
 .ptop-40 {
-    padding-top: 40px;
+    margin-top: 40px;
 }
-.pleft-10 {
-    padding-left: 10px;
+.ptop-right {
+    margin-top: 10px;
 }
 @media (min-width: 360px) {
     .right-column {
@@ -412,8 +419,22 @@ body .header-white {
     .ptop-40 {
         padding-top: 30px;
     }
-    .pleft-10 {
-        padding-left: 15px;
+    .btn-position {
+        justify-content: center;
+    }
+    .ptop-40 {
+        margin-top: 0;
+    }
+    .ptop-right {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 360px) {
+    .serv-item {
+        grid-template-columns: 1fr;
+    }
+    .btn-position {
+        justify-content: center;
     }
     .smp-text {
         text-align: left;
@@ -425,6 +446,9 @@ body .header-white {
     .right-column {
         flex-wrap: nowrap;
     }
+    .btn-position {
+        justify-content: center;
+    }
     .pleft-10 {
         padding-top: 20px;
     }
@@ -432,6 +456,26 @@ body .header-white {
         text-align: left;
         font-size: 18px;
         line-height: 1.8em;
+    }
+    .serv-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .serv-item {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .btn-position {
+        justify-content: flex-end;
+    }
+    .rigth-column {
+        flex-direction: row;
+    }
+    .ptop-40 {
+        margin-top: 30px;
+    }
+    .ptop-rigth {
+        margin-top: 0;
     }
 }
 

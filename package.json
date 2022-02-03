@@ -11,6 +11,7 @@
   "author": "Andrius Akavickis, Pavel Brodovskij, Rita Cincilevičiene, Agne Kaukeniene, Mantas Šiaučiūnas, Vaidas Urbonavičius",
   "license": "MIT",
   "devDependencies": {
+    "dead-server": "^1.0.4",
     "live-server": "^1.2.1"
   }
 }
