@@ -9,11 +9,16 @@
 @import '../components/button.css';
 @import '../components/logo-slider.css';
 @import '../components/progress-bar.css';
+@import '../components/rain.css';
 @import '../components/services-item.css';
+@import '../components/services.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header start */
+body .header-hero {
+    position: relative;
+}
 
 body .header {
     display: flex;
@@ -350,6 +355,12 @@ body .header-white {
 /* company logos /w hover #1 end */
 
 /* about us start */
+.right-column {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    column-gap: 10px;
+}
 .flex-box {
     display: flex;
     flex-direction: column;
@@ -376,30 +387,54 @@ body .header-white {
 .blue-color {
     color: var(--primary-color);
 }
-.right-column {
+.btn-position {
     display: flex;
-    column-gap: 10px;
-    padding-left: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
 }
 .ptop-40 {
-    padding-top: 40px;
+    margin-top: 40px;
 }
-.pleft-10 {
-    padding-left: 10px;
+.ptop-right {
+    margin-top: 10px;
 }
-
+@media (min-width: 360px) {
+    .right-column {
+        flex-direction: column;
+    }
+    .ptop-40 {
+        padding-top: 0;
+    }
+}
 @media (min-width: 576px) {
-    .align-items > .row.bg-box {
+    .align-items > .row > .bg-box {
         padding: 15px;
     }
     .right-column {
+        flex-direction: row;
         flex-wrap: nowrap;
-    }
-    .pleft-10 {
-        padding-left: 15px;
-    }
-    .right-column {
         padding-top: 30px;
+    }
+    .ptop-40 {
+        padding-top: 30px;
+    }
+    .btn-position {
+        justify-content: center;
+    }
+    .ptop-40 {
+        margin-top: 0;
+    }
+    .ptop-right {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 360px) {
+    .serv-item {
+        grid-template-columns: 1fr;
+    }
+    .btn-position {
+        justify-content: center;
     }
     .smp-text {
         text-align: left;
@@ -411,6 +446,9 @@ body .header-white {
     .right-column {
         flex-wrap: nowrap;
     }
+    .btn-position {
+        justify-content: center;
+    }
     .pleft-10 {
         padding-top: 20px;
     }
@@ -418,6 +456,26 @@ body .header-white {
         text-align: left;
         font-size: 18px;
         line-height: 1.8em;
+    }
+    .serv-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .serv-item {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .btn-position {
+        justify-content: flex-end;
+    }
+    .rigth-column {
+        flex-direction: row;
+    }
+    .ptop-40 {
+        margin-top: 30px;
+    }
+    .ptop-rigth {
+        margin-top: 0;
     }
 }
 
@@ -682,6 +740,7 @@ body .lets-talk {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    width: 100%;
 }
 
 .form-info {
@@ -691,31 +750,13 @@ body .lets-talk {
 
 .form-row > input {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 15px;
     padding: 15px;
     background-color: #f6f7f9;
     border-style: none;
 }
 
-@media (min-width: 992px) {
-    body .lets-talk {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .lets-talk > .row,
-    .service {
-        width: 960px;
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        padding: 60px 20px;
-    }
-}
 /* lets talk end */
 
 /* blogs start */
@@ -869,6 +910,10 @@ body .lets-talk {
 @media (min-width: 600px) {
     .blog {
         --blog-row-height: 650px;
+    }
+
+    .btn-form-submit {
+        border-radius: 3px;
     }
 }
 
